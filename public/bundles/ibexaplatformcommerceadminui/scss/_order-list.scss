@@ -1,0 +1,26 @@
+.ez-ecommerce-order-list {
+    .ez-filters {
+        padding: 0;
+        border: 0;
+        transform: none;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+
+    .ibexa-btn {
+        &--trash {
+            .ibexa-icon {
+                fill: $ibexa-color-danger;
+            }
+        }
+
+        &--transfer {
+            .ibexa-icon {
+                transform: scaleX(-1);
+            }
+        }
+    }
+}
