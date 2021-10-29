@@ -1,0 +1,21 @@
+.ez-ecommerce-cockpit {
+    .ibexa-tabs--commerce-cockpit {
+        border-bottom: 0;
+    }
+
+    .ez-filters {
+        border: 0;
+        transform: none;
+
+        &__row {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: 0;
+        }
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
+}
