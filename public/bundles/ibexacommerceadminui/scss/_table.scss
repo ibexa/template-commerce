@@ -1,0 +1,40 @@
+.ibexa-table {
+    &--price-management,
+    &--stock-update,
+    &--shipping-management {
+        margin-bottom: calculateRem(24px);
+    }
+
+    &--price-management,
+    &--shipping-management {
+        .ibexa-icon--trash {
+            fill: $ibexa-color-primary;
+        }
+    }
+
+    &--shipping-management {
+        .ibexa-dropdown__selection-info {
+            margin-bottom: 0;
+        }
+
+        .ibexa-table {
+            &__currency {
+                width: calculateRem(60px);
+            }
+
+            &__country-select {
+                width: calculateRem(75px);
+            }
+
+            &__shipping-cost,
+            &__value,
+            &__zip-input {
+                width: calculateRem(80px);
+            }
+
+            &__state-input {
+                width: calculateRem(100px);
+            }
+        }
+    }
+}
