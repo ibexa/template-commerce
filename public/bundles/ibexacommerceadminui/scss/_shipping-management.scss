@@ -1,0 +1,34 @@
+.ibexa-commerce-shipping-management {
+    &__context-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .ibexa-input-text-wrapper {
+        width: initial;
+    }
+
+    .ibexa-table {
+        &--shipping-management {
+            .ibexa-table {
+                &__currency {
+                    width: calculateRem(80px);
+                }
+
+                &__country-select {
+                    width: calculateRem(75px);
+                }
+
+                &__shipping-cost,
+                &__value,
+                &__zip-input {
+                    width: calculateRem(90px);
+                }
+
+                &__state-input {
+                    width: calculateRem(100px);
+                }
+            }
+        }
+    }
+}
