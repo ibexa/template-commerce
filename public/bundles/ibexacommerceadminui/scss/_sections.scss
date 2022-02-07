@@ -1,0 +1,46 @@
+.ibexa-commerce-section {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: calculateRem(16px);
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__body {
+        display: grid;
+        column-gap: calculateRem(24px);
+        margin-bottom: calculateRem(64px);
+    }
+        
+    &--dashboard-summary-items {
+        .ibexa-commerce-section__body {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    &--dashboard-charts {
+        .ibexa-commerce-section__body {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &--dashboard-tables {
+        .ibexa-commerce-section__body {
+            grid-template-columns: 3fr 2fr;
+
+            .ibexa-btn--ghost {
+                margin-right: calculateRem(-15px);
+                align-items: center;
+            }
+        }
+    }
+}
