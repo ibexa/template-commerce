@@ -1,0 +1,79 @@
+.ibexa-commerce-order-list-filters {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border: calculateRem(1px) solid $ibexa-color-light;
+    border-radius: $ibexa-border-radius;
+    box-shadow: $ibexa-edit-header-box-shadow;
+    padding: calculateRem(8px) calculateRem(24px) calculateRem(16px);
+
+    &__group {
+        flex-grow: 1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+
+        &--date {
+            flex-grow: 0;
+        }
+    }
+
+    &__item {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+
+        &--apply-btn {
+            flex-grow: 0;
+        }
+
+        &--date {
+            flex-grow: 0;
+
+            &:first-of-type {
+                .ibexa-input--date {
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
+                    border-right: 0;
+                }
+            }
+
+            &:last-of-type {
+                .ibexa-input--date {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+
+        &--state,
+        &--payment-option {
+            margin-right: calculateRem(10px);
+        }
+
+        .ibexa-input-text-wrapper {
+            width: initial;
+        }
+
+        .ibexa-input-text-wrapper--type-date {
+            width: calculateRem(130px);
+        }
+    }
+
+    &__tag-wrapper {
+        height: calculateRem(48px);
+        display: flex;
+        align-items: center;
+    }
+
+    &__separator {
+        border-right: calculateRem(1px) solid $ibexa-color-light-500;
+        height: calculateRem(64px);
+        margin: calculateRem(20px) calculateRem(8px) 0 calculateRem(8px);
+    }
+
+    .ibexa-label {
+        margin-top: 0;
+    }
+}
