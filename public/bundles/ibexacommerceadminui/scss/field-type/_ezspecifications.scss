@@ -1,0 +1,58 @@
+.ibexa-field-edit--ezspecifications {
+    .ibexa-field-edit__data {
+        padding: calculateRem(24px);
+    }
+
+    .ibexa-collapse {
+        border-radius: $ibexa-border-radius;
+        border: calculateRem(1px) solid $ibexa-color-dark-200;
+        padding: calculateRem(16px);
+
+        &:not(:last-child) {
+            margin-bottom: calculateRem(16px);
+        }
+
+        &__header {
+            height: auto;
+
+            .ibexa-label {
+                margin: calculateRem(8px) 0;
+            }
+        }
+
+        &__body-content {
+            padding-top: calculateRem(16px);
+        }
+    }
+
+    .ibexa-table {
+        .form-inline {
+            display: flex;
+        }
+
+        &__cell {
+            .ibexa-field {
+                &--value {
+                    width: 50%;
+                }
+
+                &--value-suffix {
+                    width: 40%;
+                    margin-left: 5%;
+                }
+            }
+
+            &--single-input {
+                .ibexa-field {
+                    &--value {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .ibexa-field {
+            margin-bottom: 0;
+        }
+    }
+}
