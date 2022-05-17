@@ -1,0 +1,39 @@
+.ibexa-commerce-filters {
+    display: flex;
+    justify-content: flex-end;
+
+    &__filter {
+        &--hidden {
+            width: 0;
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        &--start,
+        &--end {
+            display: flex;
+            align-items: center;
+            margin-right: calculateRem(5px);
+        }
+    }
+
+    .ibexa-dropdown {
+        &--shop {
+            min-width: calculateRem(290px);
+            margin-right: calculateRem(16px);
+        }
+
+        &--currency {
+            min-width: calculateRem(180px);
+        }
+
+        &--date-range {
+            width: calculateRem(180px);
+
+            .ibexa-dropdown__selection-info {
+                margin: 0;
+            }
+        }
+    }
+}
