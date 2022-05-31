@@ -1,0 +1,15 @@
+.ibexa-specifications {
+    &.ibexa-card {
+        .ibexa-table {
+            margin-bottom: 0;
+
+            &__cell {
+                vertical-align: middle;
+            }
+        }
+
+        .form-control {
+            margin-bottom: 0;
+        }
+    }
+}
