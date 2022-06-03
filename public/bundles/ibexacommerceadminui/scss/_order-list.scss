@@ -1,0 +1,9 @@
+.ibexa-commerce-order-list {
+    .ibexa-btn {
+        &--transfer {
+            .ibexa-icon {
+                transform: scaleX(-1);
+            }
+        }
+    }
+}
