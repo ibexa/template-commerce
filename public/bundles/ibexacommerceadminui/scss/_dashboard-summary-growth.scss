@@ -1,0 +1,40 @@
+.ibexa-commerce-dashboard-summary-growth {
+    display: flex;
+
+    &__label,
+    &__previous-month-value {
+        margin: 0 0 0 calculateRem(5px);
+    }
+
+    &__icon {
+        transform: rotate(180deg);
+        fill: $ibexa-color-dark-400;
+        margin-right: calculateRem(3px);
+    }
+
+    &--up {
+        .ibexa-commerce-dashboard-summary-growth {
+            &__icon {
+                fill: $ibexa-color-success;
+                transform: rotate(140deg);
+            }
+
+            &__value {
+                color: $ibexa-color-success; 
+            }
+        }
+    }
+
+    &--down {
+        .ibexa-commerce-dashboard-summary-growth {
+            &__icon {
+                fill: $ibexa-color-danger;
+                transform: rotate(220deg);
+            }
+
+            &__value {
+                color: $ibexa-color-danger;
+            }
+        }
+    }
+}
