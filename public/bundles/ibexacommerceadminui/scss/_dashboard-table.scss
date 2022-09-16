@@ -1,0 +1,5 @@
+.ibexa-commerce-dashboard-table {
+    padding: 0 calculateRem(32px) calculateRem(32px);
+    border-radius: $ibexa-border-radius;
+    border: calculateRem(1px) solid $ibexa-color-light;
+}

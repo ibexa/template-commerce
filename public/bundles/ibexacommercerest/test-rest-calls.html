@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test REST calls</title>
+</head>
+<body>
+<button onclick="callRestGetCurrentBasket()">Call GET basket/current</button>
+<button onclick="callRestPatchDeliverymethod()">Call PATCH basket/current/deliverymethod</button>
+<pre id="rest-output"></pre>
+<script>
+    var callRestGetCurrentBasket = function () {
+        var resource = '/api/ibexa/v2/commerce/basket';
+        var log = document.getElementById( 'rest-output' );
+
+        log.innerHTML = "Loading the content info from " + resource + "...";
+
+        var request = new XMLHttpRequest();
+        request.open('GET', resource, true);
+        request.onreadystatechange = function () {
+            if ( request.readyState === 4 ) {
+                log.innerHTML = "HTTP response from " + resource + "\n\n" + request.getAllResponseHeaders() + "\n" + request.responseText;
+            }
+        };
+        request.setRequestHeader('Accept', 'application/vnd.ibexa.api.Basket+json');
+        request.send();
+    };
+    var callRestPatchDeliverymethod = function () {
+        var resource = '/api/ibexa/v2/commerce/deliverymethod';
+        var log = document.getElementById( 'rest-output' );
+
+        log.innerHTML = "Loading the content info from " + resource + "...";
+        log.innerHTML = "...under construction!";
+
+        var data = {
+            "BasketData":{
+                "shippingMethod":"LIEFERUNG"
+            }
+        };
+
+        var request = new XMLHttpRequest();
+        request.open('PATCH', resource, true);
+        request.onreadystatechange = function () {
+            if ( request.readyState === 4 ) {
+                log.innerHTML = "HTTP response from " + resource + "\n\n" + request.getAllResponseHeaders() + "\n" + request.responseText;
+            }
+        };
+        request.setRequestHeader('AcceptPatch', 'application/vnd.ibexa.api.BasketData+json;charset=utf8');
+// (Accept-Patch: application/vnd.ibexa.api.ContentUpdate+xml;charset=utf8)
+        request.send(data);
+    };
+</script>
+</body>
+</html>
