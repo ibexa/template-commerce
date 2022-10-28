@@ -1,0 +1,32 @@
+.ibexa-field-edit--ezvariants {
+    .ibexa-data-source {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .ibexa-field-edit__data {
+        padding: calculateRem(24px);
+    }
+
+    .ibexa-dropdown {
+        width: 50%;
+
+        &__selection-info {
+            margin-bottom: 0;
+        }
+
+        &--hidden {
+            display: none;
+        }
+
+        &__selection-info,
+        &__items {
+            width: 100%;
+        }
+    }
+
+    .ibexa-btn--add-variant {
+        margin-left: calculateRem(12px);
+    }
+}
