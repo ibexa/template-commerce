@@ -1,0 +1,32 @@
+.ibexa-commerce-stored-basket-list {
+    margin: 20px 15px 100px;
+
+    &__table {
+        width: 100%;
+        margin: 20px 0;
+        border: none;
+    }
+
+    &__table-header-cell,
+    &__table-cell {
+        font-size: 16px;
+        padding: 24px 8px;
+        border-bottom: 1px solid #DDD;
+        background-color: #f7f7f9;
+
+        &--number-of-products {
+            text-align: center;
+        }
+
+        &--remove {
+            width: 5%;
+            text-align: center;
+        }
+    }
+
+    &__icon {
+        fill: #3498DB;
+        width: 16px;
+        height: 16px;
+    }
+}
