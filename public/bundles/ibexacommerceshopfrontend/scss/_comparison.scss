@@ -1,0 +1,236 @@
+.ibexa-commerce-comparison {
+    margin: 0 auto;
+    padding: 16px;
+    max-width: 1200px;
+    width: 100%;
+
+    &__icon-button {
+        background: none;
+        padding: 4px;
+        
+        &:hover,
+        &:focus {
+            background: none;
+            border: none;
+        }
+
+        .ibexa-commerce-basket__icon {
+            max-width: 24px;
+            max-height: 24px;
+        }
+    }
+
+    &__tabs {
+        display: flex;
+    }
+
+    &__tabs-menu {
+        width: 22%;
+        padding-right: 36px;
+    }
+
+
+    &__delete-list {
+        display: none;
+
+        &--active {
+            display: inline;
+        }
+
+        .ibexa-commerce-basket__icon {
+            fill: #3498DB;
+        }
+    }
+
+    &__tabs-content {
+        width: 78%;
+        box-sizing: content-box;
+    }
+
+    &__tabs-content-header {
+        margin-bottom: 16px;
+    }
+
+    &__tab-togglers {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__tab-toggler {
+        display: inline-block;
+        width: 100%;
+        padding: 8px 12px;
+        color: #333;
+        background: none;
+        text-align: left;
+        
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: #333;
+        }
+
+        &--active {
+            color: #fff;
+            background: #333;
+        }
+
+        &--active:hover,
+        &--active:focus {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+    &__tab {
+        display: none;
+        overflow: hidden;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__pagination-container {
+        display: flex;
+        margin-bottom: 16px;
+        justify-content: space-between;
+    }
+
+    &__items {
+        display: inline-flex;
+        
+    }
+
+    &__item-actions {
+        text-align: right;
+    }
+
+    &__item {
+        width: 290px;
+        margin-right: 20px;
+        padding: 12px;
+        background: #fff;
+        border: 1px solid #ccc;
+    }
+
+    &__item-data {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+    }
+
+    &__item-image {
+        margin-bottom: 8px;
+    }
+
+    &__item-image-link {
+        display: block;
+        text-align: center;
+    }
+
+    &__item-sku,
+    &__item-variant-code {
+        font-size: 12px;
+        height: 24px;
+    }
+
+    &__price {
+        margin-bottom: 48px;
+    }
+
+    &__technical-data {
+        display: flex;
+    }
+
+    &__attributes-name-container {
+        width: 22%;
+        overflow: hidden;
+    }
+
+    &__attributes-name {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__attributes-value-container {
+        width: 78%;
+        overflow: hidden;
+    }
+
+    &__attributes-value {
+        display: none;
+
+        &--active {
+            display: inline-flex;
+        }
+    }
+
+    &__attributes-name-list-header,
+    &__attributes-values-list-header {
+        display: inline-flex;
+        justify-content: space-between;
+        margin: 16px 0 0 0;
+        height: 32px;
+        min-width: 250px;
+    }
+
+    &__attributes-name-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid #ccc;
+        background: #fff;
+        
+        li {
+            display: block;
+            width: 100%;
+            padding: 8px 32px;
+        }
+
+        li:nth-child(even) {
+            background: #ecf0f1;
+        }
+    }
+
+    &__attributes-values-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__attributes-values-list {
+            width: 310px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            border-top: 1px solid #ccc;
+            background: #fff;
+
+            li {
+                display: block;
+                width: 100%;
+                padding: 8px 32px;
+            }
+
+            li:nth-child(even) {
+                background: #ecf0f1;
+            }
+    }
+
+    &__delete-line {
+        .ibexa-commerce-basket__icon {
+            fill: #3498DB;
+        }
+    }
+
+    &__add-to-basket {
+        width: 100%;
+
+        .ibexa-commerce-basket__icon {
+            fill: #fff;
+        }
+    }
+}

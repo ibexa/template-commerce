@@ -1,0 +1,15 @@
+.ibexa-commerce-dashboard-chart-footer {
+    display: flex;
+    align-items: center;
+    margin: calculateRem(8px) 0 calculateRem(16px) calculateRem(8px);
+
+    &__label {
+        font-size: $ibexa-text-font-size-small;
+        margin-right: calculateRem(16px);
+    }
+
+    &__value {
+        margin: 0;
+        padding: 0;
+    }
+}
