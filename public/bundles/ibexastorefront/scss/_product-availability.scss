@@ -1,0 +1,15 @@
+.ibexa-store-product-availability {
+    border: 1px solid $ibexa-store-color-light-600;
+    border-radius: 4px;
+    padding: 2px 8px;
+    background-color: $ibexa-store-color-light;
+    font-size: 14px;
+
+    &--in {
+        color: $ibexa-store-color-extra-green;
+    }
+
+    &--out {
+        color: $ibexa-store-color-extra-red;
+    }
+}

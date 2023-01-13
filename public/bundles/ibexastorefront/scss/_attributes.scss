@@ -1,0 +1,19 @@
+.ibexa-store-attributes {
+    &__group-name {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-bottom: 0;
+        line-height: 1.7;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 16px;
+        line-height: 1.7;
+
+        &:nth-of-type(odd) {
+            background-color: $ibexa-store-color-light-600;
+        }
+    }
+}

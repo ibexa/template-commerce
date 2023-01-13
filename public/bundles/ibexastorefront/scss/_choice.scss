@@ -1,0 +1,20 @@
+.ibexa-store-choice {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    &__input {
+        margin-right: 8px;
+        accent-color: $ibexa-store-color-main;
+    }
+
+    &__label.ibexa-store-label {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        &::after {
+            display: none;
+        }
+    }
+}

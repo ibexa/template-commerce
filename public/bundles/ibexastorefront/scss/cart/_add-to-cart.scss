@@ -1,0 +1,26 @@
+.ibexa-store-add-to-cart {
+    &__quantity-input {
+        max-width: 100px;
+        text-align: center;
+    }
+
+    @keyframes ibexa-store-add-to-cart-pulsation {
+        0% {
+            box-shadow: 0 0 0 $ibexa-store-color-state-700;
+        }
+        50% {
+            box-shadow: 0 0 8px $ibexa-store-color-state-700;
+        }
+        100% {
+            box-shadow: 0 0 0 $ibexa-store-color-state-700;
+        }
+    }
+
+    &__variant-selector {
+        &--highlight {
+            box-shadow: 0 0 8px $ibexa-store-color-state-700;
+            animation: ibexa-store-add-to-cart-pulsation 2s ease-out infinite;
+            border-color: $ibexa-store-color-state-700;
+        }
+    }
+}

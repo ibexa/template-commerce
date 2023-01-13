@@ -1,0 +1,51 @@
+.ibexa-store-checkout-block {
+    width: 400px;
+
+    &__header {
+        display: flex;
+        margin-bottom: 16px;
+    }
+
+    &__header-step {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid $ibexa-store-color-main;
+        background-color: $ibexa-store-color-main;
+        color: $ibexa-store-color-light;
+    }
+
+    &__header-label {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0 0 0 8px;
+    }
+
+    &__content {
+        &--dark {
+            background: $ibexa-store-color-light-500;
+            padding: 24px;
+        }
+    }
+
+    &__content-row {
+        margin-bottom: 16px;
+        display: flex;
+        align-items: flex-start;
+
+        label {
+            margin-right: 8px;
+
+            &::after {
+                content: ': ';
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
