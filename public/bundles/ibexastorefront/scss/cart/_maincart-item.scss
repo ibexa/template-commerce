@@ -1,0 +1,149 @@
+.ibexa-store-maincart-item {
+    $self: &;
+
+    display: grid;
+    grid-template-columns: 150px 1fr 200px;
+    gap: 6px 0;
+    grid-template-areas:
+        'image code subtotal-label'
+        'image product-name subtotal'
+        'image statuses statuses'
+        'image quantity remove-btn';
+    padding: 16px 16px 12px 8px;
+    background: $ibexa-store-color-light;
+    border-radius: 8px;
+
+    &__image {
+        grid-area: image;
+        object-fit: contain;
+        width: 120px;
+        height: 110px;
+    }
+
+    &__product-code-wrapper {
+        grid-area: code;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $ibexa-store-color-dark-500;
+    }
+
+    &__product-code-label,
+    &__product-code {
+        display: inline;
+    }
+
+    &__product-name {
+        grid-area: product-name;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__statuses {
+        grid-area: statuses;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-bottom: 16px;
+
+        .ibexa-store-product-status {
+            margin-bottom: 6px;
+        }
+    }
+
+    &__availability {
+        display: flex;
+
+        &--hidden {
+            display: none;
+        }
+
+        &--in {
+            .ibexa-store-product-availability--out {
+                display: none;
+            }
+        }
+
+        &--out {
+            .ibexa-store-product-availability--in {
+                display: none;
+            }
+        }
+    }
+
+    &__quantity-input {
+        max-width: 88px;
+        text-align: center;
+    }
+
+    &__quantity {
+        grid-area: quantity;
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    &__quantity-label {
+        margin: 0 24px;
+        font-size: 14px;
+    }
+
+    &__quantity-x {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    &__price-net,
+    &__price-net-label {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    &__price-net-label {
+        margin-left: 4px;
+    }
+
+    &__subtotal-price-net-label,
+    &__subtotal-price-net {
+        font-weight: 700;
+        text-align: right;
+    }
+
+    &__subtotal-price-net-label {
+        grid-area: subtotal-label;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__subtotal-price-net {
+        grid-area: subtotal;
+        font-size: 20px;
+        line-height: 28px;
+        color: $ibexa-store-color-main;
+    }
+
+    &__remove-btn-wrapper {
+        grid-area: remove-btn;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    &__remove-btn {
+        margin-right: -16px;
+        color: $ibexa-store-color-dark-600;
+    }
+
+    &--invalid {
+        #{$self} {
+            &__image,
+            &__product-code-wrapper,
+            &__product-name,
+            &__quantity,
+            &__subtotal-price-net-label,
+            &__subtotal-price-net {
+                opacity: 30%;
+            }
+        }
+    }
+}

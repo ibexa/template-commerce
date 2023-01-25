@@ -1,0 +1,12 @@
+.ibexa-store-price-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    &__separator {
+        width: 20px;
+        border: 1px solid $ibexa-store-color-light-700;
+        height: 0px;
+        align-self: center;
+    }
+}
