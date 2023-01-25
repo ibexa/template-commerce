@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="148px" height="107px" viewBox="0 0 148 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2 columns</title>
+    <g id="Page-builder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5" transform="translate(-411.000000, -302.000000)" fill="#E0E0E8">
+            <g id="Group-21" transform="translate(0.000000, 151.000000)">
+                <g id="Group-19" transform="translate(16.000000, 109.000000)">
+                    <g id="2-columns" transform="translate(395.822222, 42.500000)">
+                        <path d="M51.5111111,0 L136.4,0 C141.922847,-1.01453063e-15 146.4,4.4771525 146.4,10 L146.4,96.25 C146.4,101.772847 141.922847,106.25 136.4,106.25 L51.5111111,106.25 L51.5111111,106.25 L51.5111111,0 Z" id="Rectangle-Copy-2"></path>
+                        <path d="M10,0 L48.8,0 L48.8,0 L48.8,106.25 L10,106.25 C4.4771525,106.25 2.45271059e-15,101.772847 0,96.25 L0,10 C1.10000309e-15,4.4771525 4.4771525,2.79088747e-15 10,0 Z" id="Rectangle-Copy-3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
