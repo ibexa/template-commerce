@@ -1,0 +1,35 @@
+.ibexa-store-products-list {
+    display: flex;
+    align-items: flex-start;
+
+    &__aside {
+        flex-basis: 250px;
+        margin-right: 20px;
+        background-color: $ibexa-store-color-light-600;
+        padding: 24px;
+    }
+
+    &__content {
+        flex-basis: calc(100% - 270px);
+    }
+
+    &__products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 16px;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+
+    &__results-title {
+        font-size: 20px;
+    }
+
+    &__title {
+        margin-top: 0;
+    }
+}
