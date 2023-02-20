@@ -1,0 +1,22 @@
+.ibexa-store-input {
+    height: 48px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid $ibexa-store-color-light-700;
+    font-size: 14px;
+    display: block;
+
+    &::placeholder {
+        color: $ibexa-store-color-dark-500;
+    }
+
+    &--number {
+        padding: 12px 2px 12px 16px;
+        padding-left: 35px;
+        max-width: 100px;
+    }
+
+    &--search {
+        width: 540px;
+    }
+}
