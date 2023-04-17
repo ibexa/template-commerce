@@ -1,0 +1,14 @@
+.ibexa-shipping-edit-cost-row {
+    display: flex;
+    align-items: flex-end;
+
+    &__prefix {
+        height: calculateRem(48px);
+        line-height: calculateRem(48px);
+        margin-right: calculateRem(28px);
+    }
+
+    .ibexa-label {
+        margin-top: 0;
+    }
+}

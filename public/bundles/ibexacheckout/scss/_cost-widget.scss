@@ -1,0 +1,11 @@
+.ibexa-shipping-edit-cost-widget {
+    &__value {
+        display: flex;
+    }
+
+    &__row {
+        &--price {
+            margin-right: calculateRem(4px);
+        }
+    }
+}
