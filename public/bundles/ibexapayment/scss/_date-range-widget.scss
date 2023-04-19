@@ -1,0 +1,11 @@
+.ibexa-payment-date-range-widget {
+    display: flex;
+
+    &__col {
+        align-self: center;
+
+        &--separator {
+            padding: 0 calculateRem(8px);
+        }
+    }
+}

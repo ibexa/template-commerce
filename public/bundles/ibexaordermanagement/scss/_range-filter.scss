@@ -1,0 +1,10 @@
+.ibexa-om-range-filter {
+    display: flex;
+    align-items: end;
+
+    &__separator {
+        border-top: calculateRem(1px) solid $ibexa-color-dark-300;
+        width: calculateRem(10px);
+        margin: calculateRem(24px) calculateRem(8px);
+    }
+}
