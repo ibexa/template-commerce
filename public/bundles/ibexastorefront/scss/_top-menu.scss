@@ -1,0 +1,7 @@
+.ibexa-store-top-menu {
+    background-color: $ibexa-store-color-light-600;
+
+    .ibexa-store-container {
+        grid-template-columns: auto auto auto 1fr;
+    }
+}
