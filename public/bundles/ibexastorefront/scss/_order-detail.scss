@@ -1,0 +1,106 @@
+.ibexa-store-order-detail {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    grid-template-areas: 'back back' 'header header' 'details price-details' 'items items';
+    row-gap: 16px;
+    column-gap: 16px;
+
+    &__back-wrapper {
+        grid-area: back;
+    }
+
+    &__back {
+        color: $ibexa-store-color-dark-600;
+    }
+
+    &__header {
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__reorder {
+        grid-area: reorder;
+    }
+
+    &__details,
+    &__price-details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 24px 24px;
+        gap: 6px;
+        border-radius: 8px;
+    }
+
+    &__details {
+        grid-area: details;
+        border: 2px solid $ibexa-store-color-light-600;
+    }
+
+    &__detail,
+    &__price-detail {
+        height: 24px;
+        gap: 4px;
+    }
+
+    &__detail-value {
+        display: flex;
+    }
+
+    &__price-detail,
+    &__detail {
+        display: flex;
+        align-items: center;
+    }
+
+    &__detail-label {
+        font-weight: 700;
+    }
+
+    &__price-detail-label,
+    &__detail-label {
+        &::after {
+            content: ':';
+        }
+    }
+
+    &__price-details {
+        grid-area: price-details;
+        background: $ibexa-store-color-light-600;
+    }
+
+    &__price-detail,
+    &__price-total {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__price-total {
+        justify-content: space-between;
+        margin-top: auto;
+        padding-top: 36px;
+        border-top: 1px solid $ibexa-store-color-light-700;
+        font-weight: 700;
+        font-size: 20px;
+        color: $ibexa-store-color-main;
+    }
+
+    &__items {
+        grid-area: items;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4px 16px 8px;
+        background: $ibexa-store-color-light-600;
+        border-radius: 8px;
+    }
+}

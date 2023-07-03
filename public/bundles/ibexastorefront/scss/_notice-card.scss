@@ -1,0 +1,11 @@
+.ibexa-store-notice-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    border-radius: 8px;
+
+    &--warning {
+        background: rgba(252, 174, 66, 0.15);
+        border: 1px solid $ibexa-store-color-extra-savannah;
+    }
+}

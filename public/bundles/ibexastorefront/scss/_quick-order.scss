@@ -1,0 +1,119 @@
+.ibexa-store-quick-order {
+    &__content {
+        padding: 36px;
+        background: $ibexa-store-color-light-600;
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
+
+    &__main {
+        display: grid;
+        grid-template-areas:
+            'errors errors'
+            'entries file';
+    }
+
+    &__file-wrapper {
+        grid-area: file;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .ibexa-store-errors {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__file-wrapper-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 24px 32px 24px;
+        border-radius: 8px;
+        max-width: 364px;
+        background: $ibexa-store-color-light;
+        background-image: linear-gradient(to right, $ibexa-store-color-light-700 50%, transparent 50%),
+            linear-gradient(to right, $ibexa-store-color-light-700 50%, transparent 50%),
+            linear-gradient(to bottom, $ibexa-store-color-light-700 50%, transparent 50%),
+            linear-gradient(to bottom, $ibexa-store-color-light-700 50%, transparent 50%);
+        background-position: left top, left bottom, left top, right top;
+        background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+        background-size: 20px 1px, 20px 1px, 1px 20px, 1px 20px;
+    }
+
+    &__file-input-description {
+        text-align: center;
+        margin-bottom: 16px;
+        line-height: 170%;
+    }
+
+    &__file-add-btn {
+        margin-bottom: 16px;
+    }
+
+    &__file-added-info:not(:empty) {
+        margin-bottom: 16px;
+    }
+
+    &__file {
+        display: none;
+    }
+
+    &__add-to-cart-btn-wrapper {
+        display: flex;
+    }
+
+    &__add-to-cart-btn {
+        margin-left: auto;
+    }
+
+    &__entries-wrapper {
+        grid-area: entries;
+    }
+
+    &__entry {
+        margin-bottom: 16px;
+    }
+
+    &__entry {
+        &:not(:first-child) {
+            .ibexa-store-label {
+                display: none;
+            }
+        }
+    }
+
+    &__entry-main {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__code-input {
+        width: 280px;
+        margin-right: 16px;
+    }
+
+    &__delete-entry-btn-cross {
+        height: 16px;
+        width: 16px;
+
+        &::before,
+        &::after {
+            content: '';
+            border-top: 1px solid black;
+            width: 21px;
+            display: block;
+        }
+
+        &::before {
+            transform: rotate(-45deg) translate(-6px, 4px);
+        }
+
+        &::after {
+            transform: rotate(45deg) translate(3px, 5px);
+        }
+    }
+}

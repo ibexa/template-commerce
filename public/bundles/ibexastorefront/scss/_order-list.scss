@@ -1,0 +1,55 @@
+.ibexa-store-order-list {
+    &__filters {
+        display: grid;
+        grid-template-areas: 'query status' 'created-at .' '. submit';
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 48px;
+        padding: 40px 24px;
+        background: $ibexa-store-color-light-600;
+        border-radius: 8px;
+        margin-bottom: 40px;
+    }
+
+    &__filters-query {
+        grid-area: query;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__filters-created-at-wrapper {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__filters-created-at {
+        grid-area: created-at;
+    }
+
+    &__filters-status {
+        grid-area: status;
+
+        .ibexa-store-select {
+            width: 100%;
+        }
+    }
+
+    &__filters-sort-clause {
+        display: none;
+    }
+
+    &__filters-submit {
+        grid-area: submit;
+        display: flex;
+        justify-content: end;
+    }
+
+    &__identifier-link {
+        color: $ibexa-store-color-dark-600;
+        text-decoration: underline;
+    }
+
+    &__order-status {
+        display: flex;
+    }
+}

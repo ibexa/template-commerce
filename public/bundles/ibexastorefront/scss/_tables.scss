@@ -1,0 +1,67 @@
+.ibexa-store-table {
+    $self: &;
+
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+
+    &__head-cell {
+        padding-bottom: 8px;
+        font-size: 14px;
+        line-height: 170%;
+        padding-right: 8px;
+        border-bottom: 2px solid $ibexa-store-color-main;
+    }
+
+    &__body-cell {
+        padding: 16px 8px 16px 0px;
+    }
+
+    &__empty-table-info-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 100px 0;
+    }
+
+    &__empty-table-info-text,
+    &__empty-table-action-text {
+        color: $ibexa-store-color-dark-500;
+        font-size: 16px;
+        line-height: 170%;
+    }
+
+    &__empty-table-info-text {
+        font-weight: 600;
+    }
+
+    &--primary {
+        #{$self} {
+            &__body-cell {
+                border-bottom: 1px solid $ibexa-store-color-light-600;
+            }
+        }
+    }
+
+    &--secondary {
+        #{$self} {
+            &__body-cell {
+                background-color: $ibexa-store-color-light;
+                border-bottom: 1px solid $ibexa-store-color-light-600;
+
+                &:first-child {
+                    padding-left: 8px;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                }
+
+                &:last-child {
+                    padding-right: 8px;
+                    border-top-right-radius: 8px;
+                    border-bottom-right-radius: 8px;
+                }
+            }
+        }
+    }
+}

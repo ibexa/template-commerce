@@ -1,0 +1,87 @@
+.ibexa-store-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 12px 16px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    color: $ibexa-store-color-main;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all $ibexa-store-transition-duration $ibexa-store-transition;
+
+    &[disabled],
+    &:disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+    &--primary {
+        border-color: $ibexa-store-color-main;
+        background: $ibexa-store-color-main;
+        color: $ibexa-store-color-light;
+
+        &:hover {
+            border-color: $ibexa-store-color-main-700;
+            background: $ibexa-store-color-main-700;
+        }
+
+        &:active {
+            border-color: $ibexa-store-color-main-600;
+            background: $ibexa-store-color-main-600;
+        }
+
+        &[disabled],
+        &:disabled {
+            border-color: $ibexa-store-color-light-700;
+            background: $ibexa-store-color-light-700;
+        }
+    }
+
+    &--outline-light {
+        border-color: $ibexa-store-color-main;
+        background: $ibexa-store-color-light;
+        color: $ibexa-store-color-main;
+
+        &:hover {
+            border-color: $ibexa-store-color-main-700;
+            background: $ibexa-store-color-main-700;
+            color: $ibexa-store-color-light;
+        }
+
+        &:active {
+            border-color: $ibexa-store-color-main-600;
+            background: $ibexa-store-color-main-600;
+            color: $ibexa-store-color-light;
+        }
+
+        &.disabled,
+        &[disabled],
+        &:disabled {
+            border-color: $ibexa-store-color-light-700;
+            color: $ibexa-store-color-light-700;
+        }
+    }
+
+    &--ghost {
+        border-color: transparent;
+        background: transparent;
+        color: $ibexa-store-color-main;
+    }
+
+    &--secondary {
+        background-color: transparent;
+        border-color: $ibexa-store-color-main;
+        color: $ibexa-store-color-main;
+    }
+
+    &--small {
+        font-size: 14px;
+        padding: 0;
+    }
+}
