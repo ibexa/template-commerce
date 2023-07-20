@@ -1,0 +1,67 @@
+.ibexa-store-checkout-step {
+    $self: &;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-size: 14px;
+    color: $ibexa-store-color-dark-500;
+    background: $ibexa-store-color-light;
+    max-width: 25%; // TODO: find better way to fit all elements
+    overflow: hidden;
+    text-decoration: none;
+
+    &__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid $ibexa-store-color-dark-500;
+        transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    &__label {
+        line-height: 24px;
+        padding-top: 8px;
+    }
+
+    &--active {
+        #{$self}__number {
+            border-color: $ibexa-store-color-main;
+        }
+
+        #{$self}__label {
+            color: $ibexa-store-color-main;
+            font-weight: 600;
+        }
+    }
+
+    &--done {
+        #{$self}__number {
+            border-color: $ibexa-store-color-main;
+            background-color: $ibexa-store-color-main;
+            color: $ibexa-store-color-light;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        #{$self}__label {
+            color: $ibexa-store-color-main;
+            font-weight: 600;
+        }
+
+        &:hover {
+            #{$self}__number {
+                border-color: $ibexa-store-color-main-700;
+                background-color: $ibexa-store-color-main-700;
+            }
+
+            #{$self}__label {
+                color: $ibexa-store-color-main-700;
+            }
+        }
+    }
+}
