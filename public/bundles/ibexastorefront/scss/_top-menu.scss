@@ -1,0 +1,19 @@
+.ibexa-store-top-menu {
+    background-color: $ibexa-store-color-light-600;
+
+    .ibexa-store-container {
+        padding: 0;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0;
+    }
+
+    &__left,
+    &__right {
+        display: flex;
+        gap: 16px;
+    }
+}
