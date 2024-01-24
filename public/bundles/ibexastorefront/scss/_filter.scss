@@ -1,0 +1,40 @@
+.ibexa-store-filter {
+    margin-bottom: 24px;
+
+    &--collapsed {
+        .ibexa-store-filter {
+            &__toggler {
+                transform: rotate(180deg);
+            }
+
+            &__widget {
+                display: none;
+            }
+        }
+    }
+
+    &__label {
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        color: $ibexa-store-color-dark;
+
+        .ibexa-store-label {
+            margin: 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+
+    &__toggler {
+        @include toggler($ibexa-store-color-main);
+    }
+
+    &__more-btn {
+        &--hidden {
+            display: none;
+        }
+    }
+}
