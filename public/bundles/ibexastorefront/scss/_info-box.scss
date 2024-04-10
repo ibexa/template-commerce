@@ -1,0 +1,21 @@
+.ibexa-store-info-box {
+    padding: 24px;
+    background-color: $ibexa-store-color-light-500;
+    border-radius: 0px 8px 8px 8px;
+    margin-bottom: 24px;
+
+    &__content-wrapper {
+        padding: 48px;
+        background-color: $ibexa-store-color-light;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+
+    &__content {
+        max-width: 55%;
+
+        &--wide {
+            max-width: 100%;
+        }
+    }
+}
