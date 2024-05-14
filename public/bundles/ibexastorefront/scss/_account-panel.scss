@@ -1,0 +1,6 @@
+.ibexa-store-account-panel {
+    display: grid;
+    grid-template-areas: 'menu content';
+    grid-template-columns: 350px 1fr;
+    grid-gap: 24px;
+}

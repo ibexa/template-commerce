@@ -1,0 +1,14 @@
+.ibexa-payment-filters {
+    .ibexa-adaptive-filters__static-left {
+        width: calculateRem(400px);
+        flex-shrink: 0;
+    }
+
+    .ibexa-dropdown {
+        width: calculateRem(200px);
+    }
+
+    .ibexa-input--date {
+        min-width: calculateRem(180px);
+    }
+}

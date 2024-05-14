@@ -1,0 +1,52 @@
+.ibexa-store-badge {
+    height: 24px;
+    padding: 4px 10px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    border-radius: 12px;
+    white-space: nowrap;
+
+    &--status {
+        position: relative;
+        padding-left: 16px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-width: 1px;
+        border-style: solid;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    @mixin version-properties($color, $background-color) {
+        color: $color;
+        background-color: $background-color;
+        border-color: $color;
+
+        .ibexa-icon {
+            fill: $color;
+        }
+
+        &::before {
+            background-color: $color;
+        }
+    }
+
+    &--custom-colors {
+        @include version-properties(var(--primary-color), var(--secondary-color));
+    }
+
+    &--ghost {
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
