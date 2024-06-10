@@ -1,0 +1,34 @@
+.ibexa-store-attributes {
+    &__group-name {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-bottom: 0;
+        line-height: 1.7;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 16px;
+        line-height: 1.7;
+
+        &:nth-of-type(odd) {
+            background-color: $ibexa-store-color-light-600;
+        }
+    }
+
+    &__item-value {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item-color-preview {
+        display: inline-block;
+        width: 24px;
+        height: 18px;
+        border: 1px solid $ibexa-store-color-dark-600;
+        border-radius: 4px;
+        margin-left: 4px;
+    }
+}
