@@ -1,0 +1,8 @@
+.ibexa-payment-view-tab-summary {
+    margin-top: calculateRem(14px);
+
+    &__stats {
+        display: flex;
+        gap: calculateRem(24px);
+    }
+}
