@@ -1,0 +1,19 @@
+.ibexa-store-register {
+    .ibexa-store-input,
+    .ibexa-store-select,
+    .ibexa-store-btn {
+        width: 100%;
+    }
+
+    .ibexa-store-btn {
+        margin-top: 60px;
+    }
+
+    &__form-group {
+        margin-top: 60px;
+    }
+
+    &__form-group-header {
+        margin-bottom: 16px;
+    }
+}
