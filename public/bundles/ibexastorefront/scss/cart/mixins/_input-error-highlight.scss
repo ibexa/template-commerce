@@ -1,0 +1,23 @@
+@keyframes ibexa-store-add-to-cart-pulsation {
+    0% {
+        box-shadow: 0 0 0 $ibexa-store-color-state-700;
+    }
+    50% {
+        box-shadow: 0 0 8px $ibexa-store-color-state-700;
+    }
+    100% {
+        box-shadow: 0 0 0 $ibexa-store-color-state-700;
+    }
+}
+
+@mixin input-error-highlight($color: $ibexa-store-color-dark) {
+    box-shadow: 0 0 8px $ibexa-store-color-state-700;
+    animation: ibexa-store-add-to-cart-pulsation 2s ease-out infinite;
+    border-color: $ibexa-store-color-state-700;
+
+    &:focus-visible {
+        outline-style: solid;
+        outline-width: 2px;
+        outline-offset: -3px;
+    }
+}
