@@ -1,0 +1,114 @@
+.ibexa-store-checkout {
+    font-size: 16px;
+    line-height: 1.7;
+
+    &__content {
+        background-color: $ibexa-store-color-light-600;
+        color: $ibexa-store-color-dark-600;
+        padding: 40px;
+
+        &--no-background {
+            background-color: transparent;
+            padding: 0;
+        }
+
+        &--main {
+            background-color: $ibexa-store-color-main;
+            color: $ibexa-store-color-light;
+        }
+
+        &--summary {
+            padding: 48px;
+            margin-bottom: 72px;
+        }
+    }
+
+    &__content-row {
+        display: flex;
+    }
+
+    &__content-column {
+        flex: 1;
+
+        &--fixed-width {
+            flex: 0;
+        }
+    }
+
+    &__content-header {
+        margin: 0 0 12px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    &__content-paragraph {
+        padding-top: 12px;
+        width: 50%;
+    }
+
+    &__content-cta {
+        margin-top: 24px;
+
+        .ibexa-store-btn {
+            margin-right: 20px;
+            min-width: 250px;
+
+            &--primary {
+                border-color: $ibexa-store-color-light;
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 40px;
+
+        .ibexa-store-btn {
+            min-width: 200px;
+        }
+    }
+
+    &__link {
+        color: $ibexa-store-color-main;
+        text-decoration: none;
+    }
+
+    &__shipping-address {
+        padding: 24px;
+
+        label {
+            display: block;
+            margin-bottom: 4px;
+        }
+    }
+
+    &__form-label.ibexa-store-label {
+        font-size: 16px;
+
+        &::after {
+            content: ':';
+        }
+    }
+
+    .ibexa-store-top-menu {
+        .ibexa-store-container {
+            padding: 32px 0;
+        }
+    }
+
+    .ibexa-store-header {
+        .ibexa-store-container {
+            display: block;
+        }
+    }
+
+    .ibexa-store-choice__label {
+        font-size: 16px;
+    }
+
+    .ibexa-store-notice-card {
+        margin-bottom: 30px;
+    }
+}
