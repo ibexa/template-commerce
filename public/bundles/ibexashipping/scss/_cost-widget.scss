@@ -1,0 +1,23 @@
+.ibexa-shipping-edit-cost-widget {
+    &__value {
+        display: flex;
+    }
+
+    &__row {
+        &--price {
+            margin-right: calculateRem(4px);
+
+            .ibexa-input-text-wrapper {
+                width: calculateRem(215px);
+                max-width: initial;
+            }
+        }
+
+        &--currency {
+            .ibexa-dropdown {
+                width: calculateRem(100px);
+                min-width: initial;
+            }
+        }
+    }
+}
