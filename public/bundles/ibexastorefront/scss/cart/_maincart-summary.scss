@@ -1,0 +1,60 @@
+.ibexa-store-maincart-summary {
+    background: $ibexa-store-color-light-600;
+    border-radius: 8px;
+    padding: 24px;
+
+    &__headline {
+        margin-bottom: 32px;
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    &__action {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 4px;
+
+        &--subtotal {
+            font-weight: 700;
+        }
+
+        &--total {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: $ibexa-store-color-main;
+        }
+    }
+
+    &__item-label,
+    &__item-value {
+        white-space: nowrap;
+    }
+
+    &__item-label {
+        margin-right: 15px;
+
+        &::after {
+            content: ':';
+        }
+    }
+}

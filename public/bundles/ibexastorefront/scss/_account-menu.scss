@@ -1,0 +1,42 @@
+.ibexa-store-account-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 400px;
+    padding: 40px 32px 16px 16px;
+    background-color: $ibexa-store-color-light-600;
+    border-radius: 8px;
+
+    &__title {
+        margin: 0;
+    }
+
+    &__list {
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding-left: 16px;
+    }
+
+    &__list-item {
+        display: flex;
+        width: 100%;
+        color: $ibexa-store-color-dark-600;
+
+        &.current {
+            color: $ibexa-store-color-main;
+            font-weight: 700;
+        }
+
+        &.last {
+            border-top: 1px solid $ibexa-store-color-light-700;
+            margin-top: 16px;
+        }
+    }
+
+    &__link {
+        padding: 16px 0;
+        text-decoration: none;
+        color: inherit;
+    }
+}
