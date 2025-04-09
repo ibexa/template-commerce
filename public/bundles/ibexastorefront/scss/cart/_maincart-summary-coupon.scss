@@ -1,0 +1,67 @@
+.ibexa-store-maincart-summary-coupon {
+    &__input-container {
+        grid-template-areas:
+            'input apply-btn'
+            'error error';
+        column-gap: 10px;
+        display: none;
+
+        &--visible {
+            display: grid;
+        }
+    }
+
+    &__input {
+        grid-area: input;
+
+        &--error {
+            border-color: #db0032;
+        }
+    }
+
+    &__apply-btn {
+        grid-area: apply-btn;
+    }
+
+    &__error {
+        grid-area: error;
+    }
+
+    &__coupon {
+        grid-template-areas:
+            'label label remove-btn'
+            'badge info info';
+        grid-template-columns: auto 1fr 1fr;
+        background: #ffffff;
+        border-bottom: 2px solid #ff4713;
+        padding: 12px 16px;
+        gap: 10px;
+        display: none;
+
+        &--visible {
+            display: grid;
+        }
+    }
+
+    &__label {
+        grid-area: label;
+        align-self: center;
+    }
+
+    &__remove-btn {
+        grid-area: remove-btn;
+        justify-self: end;
+        color: #ff4713;
+    }
+
+    &__discount-badge {
+        grid-area: badge;
+    }
+
+    &__info {
+        grid-area: info;
+        align-self: center;
+        font-size: 14px;
+        color: #71767c;
+    }
+}

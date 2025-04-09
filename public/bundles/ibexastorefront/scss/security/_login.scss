@@ -1,0 +1,57 @@
+.ibexa-store-login {
+    display: flex;
+
+    &__info-wrapper {
+        flex-basis: 55%;
+        padding: 82px;
+    }
+
+    &__info-header {
+        font-size: 46px;
+        line-height: 60px;
+        margin-top: 0;
+    }
+
+    &__info-desc {
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+    &__form-wrapper {
+        flex-basis: 45%;
+        padding: 82px;
+        background-color: $ibexa-store-color-light;
+        box-shadow: 2px 4px 25px 13px rgba(0, 0, 0, 0.04);
+        border-radius: 10px;
+        border: 1px solid $ibexa-store-color-light-600;
+    }
+
+    &__form-header {
+        margin: 0 0 24px;
+    }
+
+    &__form-row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+
+    &__input-label {
+        margin-bottom: 4px;
+        font-size: 14px;
+        color: $ibexa-store-color-dark;
+
+        &::after {
+            content: '*';
+        }
+    }
+
+    &__form-actions {
+        display: flex;
+        flex-direction: column;
+
+        .ibexa-store-btn {
+            margin-top: 16px;
+        }
+    }
+}

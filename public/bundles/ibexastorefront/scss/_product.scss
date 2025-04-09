@@ -1,0 +1,91 @@
+.ibexa-store-product {
+    &__card {
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    &__slider-wrapper {
+        flex-basis: 50%;
+    }
+
+    &__actions-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-basis: 50%;
+    }
+
+    &__code {
+        font-size: 14px;
+        color: $ibexa-store-color-dark-500;
+        margin-bottom: 16px;
+    }
+
+    &__availability {
+        margin-bottom: 100px;
+    }
+
+    &__info-title {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    &__add-to-cart-form {
+        width: 100%;
+
+        .ibexa-store-price ~ & {
+            margin-top: 0;
+        }
+    }
+
+    &__add-to-cart {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+            'quantity-input quantity-label'
+            'btn btn';
+        grid-column-gap: 28px;
+        grid-row-gap: 10px;
+        align-items: center;
+
+        &--variant {
+            grid-template-columns: minmax(0, 1fr) auto auto;
+            grid-template-areas:
+                'variant-selector quantity-input quantity-label'
+                'btn btn btn';
+        }
+
+        .ibexa-store-add-to-cart {
+            &__variant-selector {
+                grid-area: variant-selector;
+            }
+
+            &__quantity-input {
+                grid-area: quantity-input;
+            }
+
+            &__quantity-input-label {
+                grid-area: quantity-label;
+            }
+
+            &__add-to-cart-btn {
+                grid-area: btn;
+            }
+        }
+    }
+
+    &__prices-info {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: auto;
+        margin-bottom: 16px;
+        align-self: flex-end;
+    }
+
+    &__discount-info {
+        display: flex;
+        gap: 5px;
+    }
+}
