@@ -1,0 +1,43 @@
+.ibexa-store-maincart-summary-coupon {
+    &__input-container {
+        grid-template-areas:
+            'input apply-btn'
+            'error error';
+        column-gap: 10px;
+        display: none;
+
+        &--visible {
+            display: grid;
+        }
+    }
+
+    &__input {
+        grid-area: input;
+
+        &--error {
+            border-color: #db0032;
+        }
+    }
+
+    &__apply-btn {
+        grid-area: apply-btn;
+    }
+
+    &__error {
+        grid-area: error;
+    }
+
+    &__coupon {
+        display: none;
+
+        &--visible {
+            display: grid;
+        }
+    }
+
+    &__remove-btn {
+        grid-area: remove-btn;
+        justify-self: end;
+        color: #ff4713;
+    }
+}
