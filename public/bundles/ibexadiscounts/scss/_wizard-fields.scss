@@ -1,0 +1,62 @@
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/custom.scss' as *;
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/functions/calculate.rem' as *;
+
+.ibexa-dc-wizard-fields {
+    &__headline {
+        margin-bottom: calculateRem(24px);
+
+        &--had-sub-info {
+            margin-bottom: 0;
+        }
+    }
+
+    &__headline-sub-info {
+        font-size: $ibexa-text-font-size-small;
+        color: $ibexa-color-dark-400;
+        margin-bottom: calculateRem(24px);
+    }
+
+    &__range-fields {
+        display: flex;
+        gap: calculateRem(16px);
+        max-width: calculateRem(752px);
+
+        .form-group {
+            flex-grow: 1;
+            flex-basis: 0;
+
+            .ibexa-date-time-picker {
+                width: auto;
+            }
+        }
+    }
+
+    &__priority {
+        &.ibexa-input-text-wrapper.ibexa-input-text-wrapper--type-number {
+            max-width: calc(752px / 2 - 8px);
+        }
+    }
+
+    .form-group:not(:last-of-type) {
+        margin-bottom: calculateRem(20px);
+    }
+
+    &__discount-value-fields {
+        display: flex;
+        gap: calculateRem(16px);
+    }
+
+    &__discount-value-field--value {
+        min-width: calculateRem(367px);
+    }
+
+    &__discount-value-field--currency {
+        .ibexa-dropdown {
+            min-width: calculateRem(176px);
+        }
+    }
+
+    &__money-input {
+        max-width: calculateRem(277px);
+    }
+}

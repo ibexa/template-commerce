@@ -1,0 +1,11 @@
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/functions/calculate.rem' as *;
+
+.ibexa-dc-wizard-layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url('/bundles/ibexaadminui/img/background-gray.svg');
+    background-size: cover;
+    height: calc(100vh - calculateRem(64px));
+    overflow-y: scroll;
+}
