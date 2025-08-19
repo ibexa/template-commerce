@@ -1,0 +1,7 @@
+.ibexa-shipping-edit-form {
+    &__tax-rate {
+        display: inline-block;
+        min-width: calculateRem(320px);
+        margin-top: calculateRem(24px);
+    }
+}

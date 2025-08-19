@@ -1,0 +1,27 @@
+.ibexa-om-orders-filters {
+    .ibexa-adaptive-filters__static-left {
+        width: calculateRem(400px);
+        flex-shrink: 0;
+    }
+
+    .ibexa-dropdown {
+        width: calculateRem(200px);
+    }
+
+    .ibexa-input--date {
+        min-width: calculateRem(180px);
+    }
+
+    &__price-wrapper {
+        width: calculateRem(100px);
+    }
+
+    &__currency-wrapper {
+        margin-left: calculateRem(16px);
+
+        .ibexa-dropdown {
+            width: calculateRem(110px);
+            min-width: initial;
+        }
+    }
+}

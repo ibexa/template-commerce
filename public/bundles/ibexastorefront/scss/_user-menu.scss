@@ -1,0 +1,17 @@
+.ibexa-store-user-menu {
+    justify-self: end;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+
+    &__login-link {
+        margin-right: 8px;
+    }
+
+    &__user-avatar {
+        height: 24px;
+        margin-right: 8px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}

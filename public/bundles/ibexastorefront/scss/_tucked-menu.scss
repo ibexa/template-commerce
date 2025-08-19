@@ -1,0 +1,47 @@
+.ibexa-store-tucked-menu {
+    position: relative;
+
+    &__btn {
+        height: 44px;
+        color: $ibexa-store-color-dark-600;
+    }
+
+    &__dots {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    &__popup-menu {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        border: 1px solid $ibexa-store-color-light-600;
+        min-width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        font-size: 14px;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__popup-menu-item {
+        background-color: $ibexa-store-color-light;
+
+        &:hover {
+            background-color: $ibexa-store-color-light-500;
+        }
+    }
+
+    &__popup-menu-item-content {
+        display: block;
+        padding: 8px 16px;
+        text-decoration: none;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+}
