@@ -1,0 +1,15 @@
+.ibexa-store-register-view {
+    .ibexa-store-security-page__content {
+        display: block;
+
+        .ibexa-store-container {
+            max-width: 900px;
+            border: 1px solid $ibexa-store-color-light-600;
+            box-shadow: 2px 4px 25px 13px rgba(0, 0, 0, 0.04);
+            border-radius: 10px;
+            background-color: $ibexa-store-color-light;
+            margin: 42px auto;
+            padding: 72px 230px;
+        }
+    }
+}

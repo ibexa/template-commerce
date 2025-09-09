@@ -1,0 +1,40 @@
+.ibexa-shipment-view-tab-summary {
+    margin-top: calculateRem(14px);
+
+    &__stats {
+        display: flex;
+        gap: calculateRem(24px);
+    }
+
+    &__details-grid {
+        display: grid;
+        grid-template-areas:
+            'basic-information addresses'
+            'customer-details addresses';
+        gap: calculateRem(24px);
+        margin-top: calculateRem(33px);
+    }
+
+    &__details-wrapper {
+        border: calculateRem(1px) solid $ibexa-color-light-400;
+        border-radius: $ibexa-border-radius;
+        padding: calculateRem(24px) calculateRem(24px) calculateRem(33px) calculateRem(24px);
+
+        &--basic-information {
+            grid-area: basic-information;
+            background: $ibexa-color-light-100;
+        }
+    }
+
+    &__details-outer-wrapper {
+        &--addresses {
+            grid-area: addresses;
+        }
+    }
+
+    .ibexa-details {
+        &__item-content {
+            display: flex;
+        }
+    }
+}
