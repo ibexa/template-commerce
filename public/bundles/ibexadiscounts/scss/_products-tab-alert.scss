@@ -1,0 +1,8 @@
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/custom.scss' as *;
+
+.ibexa-dc-products-tab-alert {
+    &__all-products-link {
+        color: $ibexa-color-complementary-700;
+        font-size: $ibexa-text-font-size-small;
+    }
+}

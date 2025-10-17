@@ -1,0 +1,17 @@
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/functions/calculate.rem' as *;
+
+.ibexa-payment-date-range-widget {
+    display: flex;
+
+    &__col {
+        align-self: center;
+
+        &--separator {
+            padding: 0 calculateRem(8px);
+        }
+    }
+
+    .ibexa-input--date {
+        min-width: 20ch;
+    }
+}

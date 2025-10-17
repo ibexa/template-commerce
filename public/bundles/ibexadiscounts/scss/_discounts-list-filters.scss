@@ -1,0 +1,24 @@
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/functions/calculate.rem' as *;
+
+.ibexa-dc-discounts-list-filters {
+    .ibexa-adaptive-filters__static-left {
+        width: calculateRem(400px);
+        flex-shrink: 0;
+    }
+
+    .ibexa-dropdown {
+        width: calculateRem(200px);
+    }
+
+    .ibexa-input--date {
+        min-width: calculateRem(180px);
+    }
+
+    &__filters-sort-clause {
+        display: none;
+    }
+
+    .ibexa-date-time-range-single:not(.ibexa-date-time-range-single--hidden) {
+        margin-left: calculateRem(16px);
+    }
+}
