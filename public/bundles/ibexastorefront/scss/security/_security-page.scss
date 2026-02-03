@@ -1,0 +1,22 @@
+.ibexa-store-security-page {
+    &__header {
+        height: 84px;
+        background-color: $ibexa-store-color-dark-600;
+        display: flex;
+        align-items: center;
+        padding-left: 88px;
+
+        .ibexa-store-logo__image {
+            height: 24px;
+        }
+    }
+
+    &__content {
+        height: calc(100vh - 84px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: auto;
+        background-color: $ibexa-store-color-light-600;
+    }
+}

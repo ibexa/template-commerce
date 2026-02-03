@@ -1,0 +1,33 @@
+.ibexa-store-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+
+    nav {
+        display: flex;
+    }
+
+    a {
+        text-decoration: none;
+        color: $ibexa-store-color-dark-600;
+    }
+
+    a,
+    span {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .disabled {
+        color: $ibexa-store-color-light-700;
+    }
+
+    .current {
+        background-color: $ibexa-store-color-main;
+        color: $ibexa-store-color-light;
+        border-radius: 8px;
+    }
+}

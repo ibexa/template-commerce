@@ -1,0 +1,54 @@
+.ibexa-store-notice-card {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+
+    &--warning {
+        background: rgba($ibexa-store-color-extra-savannah, 0.15);
+        border-color: $ibexa-store-color-extra-savannah;
+    }
+
+    &--success {
+        background: rgba($ibexa-store-color-extra-green, 0.15);
+        border-color: $ibexa-store-color-extra-green;
+    }
+
+    &__content {
+        padding: 8px 0;
+        flex: 1;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+    }
+
+    &__close-btn {
+        border: none;
+        background-color: transparent;
+    }
+
+    &__close-cross {
+        height: 16px;
+        width: 16px;
+
+        &::before,
+        &::after {
+            content: '';
+            border-top: 1px solid black;
+            width: 21px;
+            display: block;
+        }
+
+        &::before {
+            transform: rotate(-45deg) translate(-6px, 4px);
+        }
+
+        &::after {
+            transform: rotate(45deg) translate(3px, 5px);
+        }
+    }
+}
