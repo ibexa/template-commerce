@@ -1,0 +1,77 @@
+@use '../variables' as *;
+@use '../mixins/toggler' as *;
+
+.ibexa-store-add-to-shopping-list {
+    $self: &;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__toggler-btn {
+        &:hover {
+            #{$self}__toggler-btn-icon {
+                &::after,
+                &::before {
+                    background-color: $ibexa-store-color-main-700;
+                }
+            }
+        }
+
+        &.disabled,
+        &[disabled],
+        &:disabled {
+            #{$self}__toggler-btn-icon {
+                &::after,
+                &::before {
+                    background-color: $ibexa-store-color-light-700;
+                }
+            }
+        }
+    }
+
+    &__toggler-btn-label {
+        margin-right: 16px;
+    }
+
+    &__toggler-btn-icon {
+        @include toggler();
+
+        transition: all $ibexa-store-transition-duration $ibexa-store-transition;
+
+        &::after,
+        &::before {
+            transition: all $ibexa-store-transition-duration $ibexa-store-transition;
+            background-color: $ibexa-store-color-main;
+        }
+    }
+
+    &__popup {
+        position: absolute;
+        max-width: 100%;
+        background: $ibexa-store-color-light;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        top: 50px;
+        min-width: 100%;
+        overflow: hidden;
+        z-index: 1;
+
+        &--top {
+            top: auto;
+            bottom: 50px;
+        }
+    }
+
+    &--collapsed {
+        #{$self} {
+            &__popup {
+                display: none;
+            }
+
+            &__toggler-btn-icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
