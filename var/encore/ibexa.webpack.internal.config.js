@@ -1,0 +1,1 @@
+module.exports = [".\/vendor\/ibexa\/storefront\/src\/bundle\/Resources\/encore\/ibexa.webpack.internal.config.js"];

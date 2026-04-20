@@ -1,0 +1,8 @@
+@use 'variables' as *;
+
+.ibexa-store-counter-title {
+    &__counter {
+        color: $ibexa-store-color-dark-500;
+        font-weight: normal;
+    }
+}

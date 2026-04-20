@@ -1,0 +1,18 @@
+@use '../variables' as *;
+
+.ibexa-store-shopping-list-list {
+    &__filters-top,
+    &__filters-bottom {
+        display: flex;
+        column-gap: 24px;
+        align-items: end;
+    }
+
+    &__filters-bottom {
+        flex-wrap: wrap;
+    }
+
+    &__filters-name {
+        flex-grow: 1;
+    }
+}
