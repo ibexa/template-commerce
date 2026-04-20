@@ -1,0 +1,13 @@
+.ibexa-store-add-to-cart {
+    &__quantity-input {
+        max-width: 100px;
+        text-align: center;
+    }
+
+    &__quantity-input,
+    &__variant-selector {
+        &--highlight {
+            @include input-error-highlight();
+        }
+    }
+}

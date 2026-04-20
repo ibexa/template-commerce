@@ -1,0 +1,44 @@
+.ibexa-om-order-cart-cost-summary {
+    display: flex;
+    flex-direction: column;
+    padding: calculateRem(24px);
+    gap: calculateRem(8px);
+    background: $ibexa-color-light-100;
+    border: calculateRem(1px) solid $ibexa-color-light-400;
+    border-radius: $ibexa-border-radius;
+
+    &__headline {
+        font-weight: 600;
+        font-size: $ibexa-text-font-size;
+        line-height: calculateRem(24px);
+        margin-bottom: calculateRem(8px);
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+
+        &--total {
+            border-top: calculateRem(1px) solid $ibexa-color-light;
+            padding-top: calculateRem(16px);
+            margin-top: calculateRem(16px);
+        }
+    }
+
+    &__item-label,
+    &__item-value {
+        &--total {
+            font-weight: 600;
+            font-size: $ibexa-text-font-size;
+            line-height: calculateRem(24px);
+        }
+    }
+
+    &__item-value {
+        color: $ibexa-color-dark-400;
+
+        &--total {
+            color: $ibexa-color-primary;
+        }
+    }
+}
