@@ -1,0 +1,13 @@
+.ibexa-store-select {
+    height: 48px;
+    background: $ibexa-store-color-light;
+    border: 1px solid $ibexa-store-color-light-700;
+    border-radius: 8px;
+    padding: 11px 16px;
+    transition: all $ibexa-store-transition-duration $ibexa-store-transition;
+    display: block;
+
+    &[hidden] {
+        display: none;
+    }
+}
