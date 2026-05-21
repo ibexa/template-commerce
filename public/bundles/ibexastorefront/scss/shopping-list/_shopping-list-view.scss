@@ -1,0 +1,58 @@
+@use '../variables' as *;
+
+.ibexa-store-shopping-list-view {
+    display: grid;
+    grid-template-areas: 'title actions' 'info info' 'products products';
+    grid-gap: 24px;
+
+    &__title {
+        grid-area: title;
+
+        .ibexa-store-counter-title {
+            margin-bottom: 0;
+        }
+    }
+
+    &__actions {
+        grid-area: actions;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__info {
+        grid-area: info;
+    }
+
+    &__updated-label {
+        font-weight: 600;
+    }
+
+    &__products {
+        grid-area: products;
+    }
+
+    &__delete-shopping-list-btn,
+    &__delete-selected-products-btn {
+        color: $ibexa-store-color-state-700;
+        border-color: $ibexa-store-color-state-700;
+
+        &:hover {
+            border-color: $ibexa-store-color-extra-purple;
+            color: $ibexa-store-color-extra-purple;
+        }
+
+        &:active {
+            border-color: $ibexa-store-color-extra-purple;
+            color: $ibexa-store-color-extra-purple;
+        }
+
+        &.disabled,
+        &[disabled],
+        &:disabled {
+            color: $ibexa-store-color-light-700;
+            border-color: $ibexa-store-color-light-700;
+        }
+    }
+}

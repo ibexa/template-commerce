@@ -1,0 +1,12 @@
+@use 'variables' as *;
+
+.ibexa-store-main-menu {
+    background-color: $ibexa-store-color-light-600;
+
+    .ibexa-store-container {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 10px 32px;
+    }
+}

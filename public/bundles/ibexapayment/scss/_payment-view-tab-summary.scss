@@ -1,0 +1,10 @@
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/functions/calculate.rem' as *;
+
+.ibexa-payment-view-tab-summary {
+    margin-top: calculateRem(14px);
+
+    &__stats {
+        display: flex;
+        gap: calculateRem(24px);
+    }
+}
