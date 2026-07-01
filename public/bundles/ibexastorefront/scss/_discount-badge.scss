@@ -1,0 +1,23 @@
+.ibexa-store-discount-badge {
+    display: flex;
+    align-items: center;
+    background-color: $ibexa-store-color-state-600;
+    color: $ibexa-store-color-light;
+    font-weight: 600;
+
+    &:empty {
+        display: none;
+    }
+
+    &--small {
+        font-size: 10px;
+        height: 21px;
+        padding: 2px 6px;
+    }
+
+    &--medium {
+        font-size: 16px;
+        height: 24px;
+        padding: 2px 4px;
+    }
+}

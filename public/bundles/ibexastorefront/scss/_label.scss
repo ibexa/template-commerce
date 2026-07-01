@@ -1,0 +1,12 @@
+.ibexa-store-label {
+    font-size: 14px;
+    margin: 16px 0 4px;
+    display: block;
+    color: $ibexa-store-color-dark;
+
+    &.required {
+        &::after {
+            content: '*';
+        }
+    }
+}

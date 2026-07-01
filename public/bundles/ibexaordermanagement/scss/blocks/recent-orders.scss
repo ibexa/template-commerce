@@ -1,0 +1,14 @@
+@import './public/bundles/ibexaadminui/scss/custom.scss';
+@import './public/bundles/ibexaadminui/scss/functions/calculate.rem';
+
+.ibexa-om-recent-orders {
+    &__header {
+        margin-bottom: calculateRem(16px);
+    }
+
+    &__table {
+        padding: calculateRem(16px);
+        margin: 0;
+        box-shadow: calculateRem(4px) calculateRem(22px) calculateRem(47px) 0 rgba($ibexa-color-info-600, 0.1);
+    }
+}
