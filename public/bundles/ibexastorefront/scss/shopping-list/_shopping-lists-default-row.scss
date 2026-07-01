@@ -1,0 +1,32 @@
+@use '../variables' as *;
+
+.ibexa-store-shopping-lists__table {
+    .ibexa-store-table__head-cell,
+    .ibexa-store-table__body-cell {
+        &:first-child {
+            padding-left: 8px;
+        }
+
+        &:last-child {
+            padding-right: 8px;
+        }
+    }
+
+    .ibexa-store-table__body {
+        transform: translateY(-8px);
+    }
+
+    .ibexa-store-table__body-row--default {
+        .ibexa-store-table__body-cell {
+            background-color: #eff5ff;
+
+            &:last-child {
+                border-bottom-right-radius: 8px;
+            }
+
+            &:first-child {
+                border-bottom-left-radius: 8px;
+            }
+        }
+    }
+}

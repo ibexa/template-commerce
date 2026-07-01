@@ -1,0 +1,5 @@
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/functions/calculate.rem' as *;
+
+.ibexa-om-order-tab-items {
+    margin-top: calculateRem(14px);
+}

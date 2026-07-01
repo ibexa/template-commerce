@@ -1,0 +1,64 @@
+@use '../variables' as *;
+
+.ibexa-store-shopping-lists {
+    display: grid;
+    grid-template-areas: 'title actions' 'filters filters' 'list list';
+    grid-gap: 24px;
+
+    &__title {
+        grid-area: title;
+    }
+
+    &__actions {
+        grid-area: actions;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+    &__filters {
+        grid-area: filters;
+        padding: 40px 24px;
+        background: $ibexa-store-color-light-600;
+        border-radius: 8px;
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        grid-area: list;
+    }
+
+    &__name-with-badge {
+        display: flex;
+        align-items: center;
+    }
+
+    &__shopping-list-table-link {
+        width: 400px;
+        max-width: 400px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+
+        &--with-badge {
+            display: inline-block;
+            width: auto;
+        }
+    }
+
+    &__default-badge {
+        flex-shrink: 0;
+        margin-left: 4px;
+        font-size: 12px;
+        color: #737b7d;
+        white-space: nowrap;
+    }
+
+    &__table-product-code-wrapper {
+        max-width: 150px;
+    }
+}

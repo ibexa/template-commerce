@@ -1,0 +1,50 @@
+@use 'variables' as *;
+
+.ibexa-store-notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 24px 16px;
+    border-radius: 8px;
+    color: $ibexa-store-color-light;
+    background-color: $ibexa-store-color-extra-red;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &--success {
+        background-color: $ibexa-store-color-extra-green;
+    }
+
+    &--info {
+        background-color: $ibexa-store-color-main;
+    }
+
+    &__close-btn {
+        width: 32px;
+        height: 32px;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 20px;
+            height: 2px;
+            background-color: $ibexa-store-color-light;
+        }
+
+        &::before {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &::after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+}

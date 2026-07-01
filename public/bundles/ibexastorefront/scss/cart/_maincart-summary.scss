@@ -1,0 +1,135 @@
+@use '../variables' as *;
+@use '../mixins/toggler' as *;
+
+.ibexa-store-maincart-summary {
+    $self: &;
+
+    background: $ibexa-store-color-light-600;
+    border-radius: 8px;
+    padding: 24px;
+
+    &__headline {
+        margin-bottom: 32px;
+        font-weight: 700;
+        font-size: 28px;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 32px;
+    }
+
+    &__action {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 4px;
+
+        &--subtotal {
+            font-weight: 700;
+        }
+
+        &--total {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: $ibexa-store-color-main;
+        }
+    }
+
+    &__item-label,
+    &__item-value {
+        white-space: nowrap;
+    }
+
+    &__item-label {
+        margin-right: 15px;
+
+        &::after {
+            content: ':';
+        }
+    }
+
+    &__coupons-container {
+        margin: 32px 0;
+    }
+
+    &__discounts-info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__discounts-info {
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__discounts-info-toggler-label {
+        margin-right: 10px;
+
+        &--show-more {
+            display: none;
+        }
+    }
+
+    &__discounts-info-toggler-icon {
+        display: inline-block;
+
+        @include toggler();
+
+        &::before,
+        &::after {
+            background-color: #4191ff;
+        }
+    }
+
+    &__discounts-info-toggler {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        font-weight: 600;
+        margin-top: 14px;
+        font-size: 14px;
+        padding: 4px;
+        cursor: pointer;
+
+        &--hidden {
+            display: none;
+        }
+
+        &--collapsed {
+            #{$self} {
+                &__discounts-info-toggler-label {
+                    &--show-more {
+                        display: inline;
+                    }
+
+                    &--show-less {
+                        display: none;
+                    }
+                }
+
+                &__discounts-info-toggler-icon {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
