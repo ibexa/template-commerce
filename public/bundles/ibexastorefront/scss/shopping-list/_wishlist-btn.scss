@@ -1,0 +1,9 @@
+@use '../variables' as *;
+
+.ibexa-store-wishlist-btn {
+    &__img {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+    }
+}

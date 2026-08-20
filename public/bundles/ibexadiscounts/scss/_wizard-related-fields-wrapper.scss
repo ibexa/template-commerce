@@ -1,0 +1,18 @@
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/functions/calculate.rem' as *;
+
+.ibexa-dc-wizard-related-fields-wrapper {
+    max-width: calculateRem(752px);
+    margin-bottom: calculateRem(10px);
+
+    &:has(.ibexa-pc-product-selector) {
+        max-width: none;
+    }
+
+    &--radio {
+        padding-left: calculateRem(25px);
+    }
+
+    &--hidden {
+        display: none;
+    }
+}

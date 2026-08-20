@@ -1,0 +1,34 @@
+@use '../variables' as *;
+
+.ibexa-store-shopping-list-create {
+    display: grid;
+    grid-template-areas: 'title actions' 'form form';
+    grid-gap: 24px;
+
+    &__title {
+        grid-area: title;
+    }
+
+    &__actions {
+        grid-area: actions;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__form {
+        grid-area: form;
+        background-color: $ibexa-store-color-light-600;
+        padding: 40px;
+        border-radius: 16px;
+    }
+
+    &__wishlist-edit-notice {
+        margin-bottom: 20px;
+    }
+
+    &__name-input {
+        width: 280px;
+    }
+}

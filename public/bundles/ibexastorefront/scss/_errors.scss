@@ -1,0 +1,7 @@
+@use 'variables' as *;
+
+.ibexa-store-errors {
+    font-size: 14px;
+    color: $ibexa-store-color-extra-red;
+    margin-top: 4px;
+}

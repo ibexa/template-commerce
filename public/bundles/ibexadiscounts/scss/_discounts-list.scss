@@ -1,0 +1,22 @@
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/custom.scss' as *;
+@use '@ibexa-admin-ui/src/bundle/Resources/public/scss/functions/calculate.rem' as *;
+
+.ibexa-dc-discounts-list {
+    &__sort-order {
+        border-left: calculateRem(2px) solid $ibexa-color-light;
+        padding-left: calculateRem(21px);
+
+        .ibexa-dropdown {
+            width: auto;
+        }
+    }
+
+    &__sort-order-dropdown {
+        width: calculateRem(200px);
+
+        .ibexa-dropdown__selection-info {
+            padding-left: 0;
+            border: none;
+        }
+    }
+}

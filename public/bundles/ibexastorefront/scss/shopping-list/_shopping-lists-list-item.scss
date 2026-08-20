@@ -1,0 +1,31 @@
+@use '../variables' as *;
+@use '../mixins/toggler' as *;
+
+.ibexa-store-shopping-lists-list-item {
+    padding: 12px 8px;
+    border-bottom: 1px solid $ibexa-store-color-light-600;
+    margin-bottom: 0;
+
+    &:last-of-type {
+        border-bottom-width: 0;
+    }
+
+    &__name {
+        flex-grow: 1;
+        text-align: left;
+        margin-right: 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    &--default {
+        background-color: #eff5ff;
+    }
+
+    &__default-badge {
+        color: $ibexa-store-color-dark-500;
+        font-size: 12px;
+    }
+}
