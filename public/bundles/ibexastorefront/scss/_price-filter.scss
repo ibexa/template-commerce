@@ -1,0 +1,58 @@
+.ibexa-store-price-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    &__separator {
+        width: 20px;
+        border: 1px solid $ibexa-store-color-light-700;
+        height: 0px;
+        align-self: center;
+    }
+
+    &__wrapper {
+        position: relative;
+
+        &:focus-within {
+            .ibexa-store-price-filter__currency-container {
+                border-left: 2px solid #015ecc;
+                border-top: 2px solid #015ecc;
+                border-bottom: 2px solid #015ecc;
+            }
+
+            .ibexa-store-price-filter__currency {
+                margin-left: -1px;
+            }
+        }
+    }
+
+    &__currency-container {
+        position: absolute;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        background-color: $ibexa-store-color-light-400;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        border: 1px solid $ibexa-store-color-light-700;
+    }
+
+    &__currency {
+        color: $ibexa-store-color-dark-500;
+        font-size: 12px;
+    }
+}
+
+@-moz-document url-prefix() {
+    .ibexa-store-price-filter {
+        &__wrapper {
+            &:focus-within {
+                .ibexa-store-price-filter__currency-container {
+                    border: none;
+                }
+            }
+        }
+    }
+}

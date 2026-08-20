@@ -1,0 +1,31 @@
+.ibexa-store-checkout-quick-summary {
+    background-color: $ibexa-store-color-light-500;
+    padding: 24px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+    &__label {
+        padding: 0 16px 0 8px;
+        font-size: 20px;
+        line-height: 1.3;
+        font-weight: 700;
+        color: $ibexa-store-color-main;
+    }
+
+    &__row {
+        padding: 0 8px;
+        font-size: 16px;
+
+        &--right {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        label {
+            &::after {
+                content: ':';
+            }
+        }
+    }
+}

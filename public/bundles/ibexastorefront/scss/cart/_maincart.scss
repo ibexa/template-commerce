@@ -1,0 +1,71 @@
+.ibexa-store-maincart {
+    display: flex;
+
+    &__summary-wrapper {
+        flex-grow: 0;
+        margin-left: 20px;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__cart-wrapper {
+        flex-grow: 1;
+    }
+
+    &__cart {
+        border-radius: 8px;
+        overflow: hidden;
+        background: $ibexa-store-color-light-500;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        height: 48px;
+        padding: 12px 0 12px 24px;
+        background: $ibexa-store-color-main;
+        color: $ibexa-store-color-light;
+    }
+
+    &__headline {
+        font-weight: 700;
+        font-size: 16px;
+        margin-right: 48px;
+    }
+
+    &__empty-cart-container {
+        margin: 32px 28px;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__empty-cart-headline {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__items-counter-label,
+    &__items-counter-value {
+        display: inline;
+    }
+
+    &__items-counter-label::after {
+        content: ':';
+    }
+
+    &__clear-cart-btn {
+        margin-left: auto;
+        color: $ibexa-store-color-light;
+    }
+
+    &__items-container {
+        display: grid;
+        grid-gap: 8px;
+        padding: 8px;
+    }
+}

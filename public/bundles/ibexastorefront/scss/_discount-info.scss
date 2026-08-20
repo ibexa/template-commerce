@@ -1,0 +1,68 @@
+.ibexa-store-discount-info {
+    $self: &;
+
+    display: grid;
+    grid-template-areas: 'badge name description action';
+    grid-template-columns: auto auto 1fr auto;
+    background: #ffffff;
+    border-bottom: 2px solid #ff4713;
+    padding-top: 12px;
+    padding-bottom: 2px;
+
+    &__badge {
+        grid-area: badge;
+    }
+
+    &__label {
+        grid-area: name;
+    }
+
+    &__description {
+        grid-area: description;
+        font-size: 14px;
+        color: #71767c;
+        align-self: center;
+    }
+
+    &__value {
+        grid-area: value;
+        color: #71767c;
+    }
+
+    &__action {
+        grid-area: action;
+        justify-self: end;
+    }
+
+    &__badge,
+    &__label,
+    &__description,
+    &__value,
+    &__action {
+        &:not(:empty) {
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    &__label,
+    &__description,
+    &__value {
+        display: flex;
+        align-items: center;
+    }
+
+    &--small {
+        grid-template-areas: 'badge name name action' 'description description description description';
+        padding-left: 16px;
+        padding-right: 6px;
+
+        &#{$self}--no-description {
+            grid-template-areas: 'badge name name action';
+        }
+    }
+
+    &--coupon {
+        grid-template-areas: 'badge value value action' 'name name name name' 'description description description description';
+    }
+}
